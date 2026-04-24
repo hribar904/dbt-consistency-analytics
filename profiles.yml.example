@@ -1,0 +1,7 @@
+consistency_analytics:
+  outputs:
+    dev:
+      type: duckdb
+      path: dev_consistency.duckdb
+      threads: 4
+  target: dev
