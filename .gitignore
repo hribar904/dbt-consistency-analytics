@@ -1,0 +1,17 @@
+# dbt artifacts
+target/
+dbt_packages/
+logs/
+
+# Database
+*.duckdb
+*.duckdb.wal
+*.yml
+
+# Python
+__pycache__/
+.env
+venv/
+
+# OS
+.DS_Store
