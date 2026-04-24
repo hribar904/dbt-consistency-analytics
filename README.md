@@ -1,15 +1,9 @@
-Welcome to your new dbt project!
+### **Quick Start**
+1. **Install Dependencies:** `pip install dbt-duckdb`
+2. **Initialize Database:** `dbt seed` (loads raw betting data from CSV to DuckDB)
+3. **Execute Pipeline:** `dbt build` (runs all transformations and 14 combined model & data tests)
 
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+### **Data Lineage**
+* **Bronze (Staging):** Raw data ingestion and initial casting.
+* **Silver (Transformation):** Validated predictions and ground-truth actuals.
+* **Gold (Analytics):** Business-ready fact tables (`fct_bets`, `fct_user_performance`) used for consistency auditing.
